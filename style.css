@@ -5,7 +5,8 @@ body {
 }
 
 #videoPlayer {
-  margin-top: 20px;
+  margin: 20px auto;
+  max-width: 800px;
 }
 
 #videoList {
@@ -24,4 +25,9 @@ button {
 
 button:hover {
   background: #006699;
+}
+
+iframe {
+  border: 1px solid #ddd;
+  border-radius: 4px;
 }
