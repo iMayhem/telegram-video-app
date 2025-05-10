@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<script>
+  // Parse Telegram auth data
+  const params = new URLSearchParams(window.location.hash.substring(1));
+  const user = Object.fromEntries(params.entries());
+  
+  // Save user data and redirect back
+  localStorage.setItem("telegramUser", JSON.stringify(user));
+  window.location.href = "https://iMayhem.github.io/telegram-video-app/";
+</script>
+</html>
